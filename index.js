@@ -7,7 +7,7 @@ const customer = require("./middleware/customer");
 const routes=require("./routes/routes");
 const cors = require("cors");
 const cookiParser = require("cookie-parser")
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(cookiParser());
